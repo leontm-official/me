@@ -1,3 +1,1 @@
-👋 * Hey
-👦 * I am Leon™
-💻 * And this is my personal site
+Hey mein Guter, ein guter Freund sagte mal, man lebt nur einmal, also präsentiere wie du bist. Und nein ich will jetzt kein Coming Out machen, nein ich zeige dir meine personalisierte eigens erstellte und programmierte Webseite. Viel Spaß
