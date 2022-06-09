@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeonTM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Leon™.png">
+</head>
+<body>
+    <nav class="bar">
+        <div class="icon">
+            <img src="Leon™.png">
+        </div>
+        <div class="me">
+            Leon™
+        </div>
+        <div class="menu-items">
+            <div class="item1">
+                <button class="button" id="aboutme" onclick="AboutMe()">About Me</button>  
+            </div>
+            <div class="item2">
+                <button class="button" id="projects" onclick="Projects()">My Projects</button>
+            </div>
+            <div class="item3">
+                <button class="button" id="socials" onclick="Socials()">My Socials</button>
+            </div>
+            <div class="item4">
+                <button class="button" id="contact" onclick="ContactMe()">Contact Me</button>
+            </div>
+            <div class="item1 hideItems1">
+                <button class="button" id="aboutme" onclick="AboutMe()">About Me</button>  
+            </div>
+            <div class="item2 hideItems2">
+                <button class="button" id="projects" onclick="Projects()">My Projects</button>
+            </div>
+            <div class="item3 hideItems3">
+                <button class="button" id="socials" onclick="Socials()">My Socials</button>
+            </div>
+            <div class="item4 hideItems4">
+                <button class="button" id="contact" onclick="ContactMe()">Contact Me</button>
+            </div>
+        </div>
+    </nav>
+    <div id="meB" class="meB">
+        <div class="text1">
+            Hey ich bin
+        </div>
+        <div class="text2">
+            Leon™
+        </div>
+        <div class="text3">
+            ein Web Developer
+        </div>
+    </div>
+    <div id="slider" class="slider">
+        <button onclick="SlideWeiter()" class="slider-button" id="sliderright">></button>
+        <button onclick="SlideZurück()" class="slider-button" id="sliderleft"><</button>
+        <div class="slide">
+            <div id="slider-img" class="slider-img">
+                <img class="slide-img" src="Leon™.png">
+            </div>
+            <div id="slider-txt" class="slider-txt">
+                Hey, ich bin der Leon™, ein deutscher Schüler der programmieren und Gamen liebt.
+            </div>
+            <div id="slider-related" class="slider-related">
+                Artikel hierzu: <br>
+                <a onclick="AboutMeScroll()">About Me</a>,
+                <a onclick="GamingScroll()">Gaming</a>
+            </div>
+        </div>
+    </div>
+    <button id="btnWeiter" onclick="ScrollWeiter()" class="btnWeiter animationButton">⇣Hier geht weiter⇣</button>
+    <div id="section1" class="section">
+        <h1>About Me</h1>
+        <div class="artikelZuThema">
+            Keine weiteren Artikel in dieser Kategorie
+        </div>
+        <div class="txt">
+            Ich bin Leon™, ein 15 jähriger deutscher Developer. Ich liebe es zu Programmieren, Videospiele zu spielen und mit meinen Freunden zu chillen.
+        </div>
+    </div>
+    <div id="section2" class="section">
+        <h1>Programmieren</h1>
+        <div class="artikelZuThema">
+            Artikel in dieser Kategorie: <br>
+            <a onclick="ProjekteScroll()">Projekte</a>, 
+            <a onclick="SprachenScroll()">Sprachen</a>, 
+            <a onclick="ErsterKontaktScroll()">Erster Kontakt</a>
+        </div>
+        <div class="txt">
+            Wie schon erwähnt, ich programmiere gerne. Hier in dieser Sektion erfährst du mehr darüber.
+        </div>
+        <div id="InnerSection1" class="sectionInner InnerSection1 sectionR">
+            <h2>Projekte</h2>
+            <div class="txt">
+                Aktuell arbeite ich an <a class="linkW" href="https://github.com/leontm-official/me">dieser Seite</a> dieser Seite, an dem <a class="linkW" href="https://github.com/leontm-official/damnverse">DamnVerse</a> (für meinen Lieblingsstreamer) und an ein paar Sachen für die Schule. 
+            </div>
+        </div>
+        <div id="InnerSection2" class="sectionInner InnerSection2 sectionB">
+            <h2>Sprachen</h2>
+            <div class="txt">
+                Ich programmiere in Python (ein wenig), JavaScript, HTML, CSS. Ich würde gerne Node.js und die C Sprachen können.
+            </div>
+        </div>
+        <div id="InnerSection3" class="sectionInner InnerSection3 sectionW">
+            <h2>Erster Kontakt mit dem Programmieren</h2>
+            <div class="txt">
+                Tatsächlich bin ich über das besuchen der YouTube Seite ans Programmieren geraten. Ich habe mir gedacht, als ich ein Video von "Programmieren lernen" gesehen habe, "das will ich auch können".
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="section3" class="section">
+        <h1>Gaming</h1>
+        <div class="artikelZuThema">
+            Artikel in dieser Kategorie: <br>
+            <a onclick="SpieleScroll()">Spiele</a>, 
+            <a onclick="ErfolgeScroll()">Erfolge</a>
+        </div>
+        <div class="txt">
+            In meiner Freizeit spiele ich sehr gerne Videospiele. 
+        </div>
+        <div id="InnerSection4" class="sectionInner InnerSection4 sectionW">
+            <h2>Spiele</h2>
+            <div class="txt">
+                Ich spiele Valorant und Brawl Stars, Valorant hauptsächlich mit Freunden, da ich Solo schlecht bin, lol. Und Brawl Stars spiele ich nur Solo da keiner meiner Real life Freunde das Spiel spielt.
+            </div>
+        </div>
+        <div id="InnerSection5" class="sectionInner InnerSection5 sectionR">
+            <h2>Erfolge</h2>
+            <div class="txt">
+                Sind nicht vorhanden, lel.
+                Nur Spaß in Valo ist mein Peak Gold 1 und in Brawl Stars 37000 Pokale.
+            </div>
+        </div>
+    </div>
+    <div id="section4" class="section">
+        <h1>Social Media</h1>
+        <div class="artikelZuThema">
+            Artikel in dieser Kategorie: <br>
+            <a onclick="TwitchScroll()">Twitch</a>, 
+            <a onclick="DiscordScroll()">Discord</a>, 
+            <a onclick="InstagramScroll()">Instagram</a>, 
+            <a onclick="TwitterScroll()">Twitter</a>, 
+            <a onclick="YouTubeScroll()">YouTube</a>
+        </div>
+        <div class="txt">
+            Social Media, die alt bekannten Sachen halt. Generell bin ich nicht sehr aktiv (persönlich) sondern finde es schöner auf Social Media die Fäden im Hintergrund zu ziehen oder Events zu leiten.
+        </div>
+        <div id="InnerSection6" class="sectionInner InnerSection6 sectionR">
+            <h2>Twitch</h2>
+            <div class="txt">
+                Auf Twitch habe ich 16 Follows ohne ne Stream.
+                Wie gesagt, ich streame nicht, moderiere aber auch hier sehr gerne Streams.
+                
+                <a class="linkW" href="https://www.twitch.tv/dcx_leontm">Link zu meinem Kanal</a>
+            </div>
+        </div>
+        <div id="InnerSection7" class="sectionInner InnerSection7 sectionW">
+            <h2>Discord</h2>
+            <div class="txt">
+                Discord ist auf jeden Fall meine Lieblingsplatform, ich finde das Konzept supi. Ich plane aktuell mir selber einen Server zu machen, am liebsten Moderiere ich aber Server.
+                
+                <a class="linkR" href="https://discord.com/users/777492771803365406">Link zu meinem Account</a>
+            </div>
+        </div>
+        <div id="InnerSection8" class="sectionInner InnerSection8 sectionB">
+            <h2>Instagram</h2>
+            <div class="txt">
+                Auf Instagram mache ich auch nicht (eigentlich gar nichts), schreibe mir doch gerne ne Mail wenn du Stories von mir sehen willst.
+                
+                <a class="linkW" href="https://www.instagram.com/leontm.official/">Link zu meinem Profil</a>
+            </div>
+        </div>
+        <div id="InnerSection9" class="sectionInner InnerSection9 sectionW">
+            <h2>Twitter</h2>
+            <div class="txt">
+                Ich habe geplant bald mal Tweets über aktuelle Projekte zu machen. 
+                
+                <a class="linkR" href="https://twitter.com/LeonTM_Official">Link zu meinem Kanal</a>
+            </div>
+        </div>
+        <div id="InnerSection10" class="sectionInner InnerSection10 sectionR">
+            <h2>YouTube</h2>
+            <div class="txt">
+                Generell bin ich auf YouTube nicht aktiv. Benutze die Platform eigentlich nur um Videos zu schauen. Schreibe mir gerne eine Email wenn du Videos von mir sehen willst.
+                
+                <a class="linkW" href="https://www.youtube.com/channel/UClUsuSmrvN3WkN0fu7g_vVA">Link zu meinem Kanal</a>
+            </div>
+        </div>
+    </div>
+    <div id="section5" class="section">
+        <h1>Contact Me</h1>
+        <form class="email">
+            <div class="email-erklärung">
+                In diesen Feld muss deine Email.
+            </div>
+            <input required type="email" placeholder="Deine Email Adresse" id="email-adresse">
+            <div class="email-körper-erklärung">
+                Hier kommt deine Nachricht an mich hin.
+            </div>
+            <textarea oninput="writing()" maxlength="500" placeholder="Deine Nachricht hier" id="email-body"></textarea>
+            <div id="email-erfolg">
+    
+            </div>
+            <button type="submit" onsubmit="SendEmail(); return" id="email-submit">Senden</button>
+        </form>
+        <footer>
+            <div class="footer">
+    
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+        if (document.getElementById("email-adresse").value.match(validRegex)) {
+        console.log("Email ist richtig!");
+        if (document.getElementById("email-body").value == "") {
+            Email.send({
+                SecureToken: "cf0c347d-87f7-4da7-a0b7-5b91649eb49d",
+                To : 'leon.cool.item@gmail.com',
+                From : document.getElementById("email-adresse").value,
+                Subject : "Neues Kontakt Formular",
+                Body : document.getElementById("email-body").value
+    })
+    .then(message => alert(message))
+        } else {
+            document.getElementById("email-erfolg").innerHTML = "Sie müssen eine Nachricht angeben!"
+        }
+    } else {
+        console.log("Email ist falsch");
+        document.getElementById("email-erfolg").innerHTML = "Ihre Email stimmt nicht!";
+    }
+    </script>
+</body>
+</html>
